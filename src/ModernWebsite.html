@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My WebSite</title>
+</head>
+<body>
+    <nav class="p-3 flex justify-between items-center">
+        <a href="" class="flex gap-2 items-center flex-1">
+            <img src="../imgeasset/logo.png" class="object-cover max-w-12 max-h-12">
+            <span class="text-lg font-medium font-display">ToLinuX</span>
+        </a>
+        <div id="nav_menu_bigscreen" class=" hidden lg:flex gap-12 rounded-full border-2 border-blue-700 hover:border-black p-4 font-bold " >
+                <a href="" class="font-medium hover:text-blue-700 ">PRICING</a>
+                <a href="" class="font-medium hover:text-blue-700 ">PRODUCTS</a>
+                <a href="" class="font-medium hover:text-blue-700">FEATURES</a>
+                <a href="" class="font-medium hover:text-blue-700">DOCS</a>
+                <a href="" class="font-medium hover:text-blue-700">BLOG</a>
+        </div>
+        <div class=" hidden lg:flex flex-1 justify-end">
+            <button class="flex items-center gap-2 rounded-full p-2 bg-violet-700 m-1 hover:rounded"  >
+                <img src="../imgeasset/asset_1.svg" alt="">
+                <span class="font-medium text-white">100x Developers</span>
+                <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+        </div>
+        
+
+        <button class="p-2 lg:hidden" onclick="handlemenubtn()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <div  id="nav-dialog" class=" hidden fixed z-10 lg:hidden bg-white inset-0 p-3">
+           <div id="nav-bar-mobile" class="flex justify-between">
+            <a href="" class="flex gap-2 items-center">
+                <img src="../imgeasset/logo.png" class="object-cover max-w-12 max-h-12">
+                <span class="text-lg font-medium font-display">ToLinuX</span>
+            </a>
+            <button class="p-2 lg:hidden" onclick="handlemenubtn()">
+                <i class="fa-solid fa-xmark text-gray-600"></i>
+            </button>
+           </div>
+           <div class="flex-col mt-8">
+            <a href="" class="font-medium hover:text-blue-700 m-3 p-3 hover:bg-gray-200 rounded-lg block">PRICING</a>
+                <a href="" class="font-medium hover:text-blue-700 m-3 p-3  hover:bg-gray-200 rounded-lg block">PRODUCTS</a>
+                <a href="" class="font-medium hover:text-blue-700 m-3 p-3  hover:bg-gray-200 rounded-lg block">FEATURES</a>
+                <a href="" class="font-medium hover:text-blue-700 m-3 p-3  hover:bg-gray-200 rounded-lg block">DOCS</a>
+                <a href="" class="font-medium hover:text-blue-700 m-3 p-3  hover:bg-gray-200 rounded-lg block">BLOG</a>
+           </div>
+           <div class="h-[1px] bg-gray-300 rounded"></div>
+           <button class="mt-5 flex items-center gap-2 rounded-lg border px-6 py-4 hover:rounded border-gray-700">
+            <img src="../imgeasset/asset_1.svg" alt="">
+            <span class="font-medium">100x Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
+    </nav>
+    <!-- Main section -->
+     <main>
+        <!-- herro -->
+        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-100 via-orange-100 to-transparent" >
+            <div id="hero-container" class="max-w-4xl  mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center" >
+                    <div id="vesion" class="flex my-6 gap-2 items-center border border-yellow-300 bg-yellow-100 rounded w-fit px-3 py-1 shadow-md 
+                    hover:shadow-lg hover:-translate-y-1 transition duration-500 group sm:items-center">
+                            <div class="w-2 h-2 bg-yellow-400 rounded-full border-yellow-600 border"></div>
+                            <p class="text-yellow-800 font-display font-semibold ">v0.21.1: Find-in-page bug fiexs</p>
+                            <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-500"></i>
+                    </div>
+
+                    <div id="feature" class=" hidden sm:flex gap-4">
+                            <div class="flex justify-center items-center gap-2 text-gray-400">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <p>Code Optional</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-gray-400">
+                                <i class="fa-solid fa-handshake"></i>
+                                <p>Easy to Use</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 text-gray-400">
+                                <i class="fa-brands fa-android"></i>
+                                <p>Android App</p>
+                            </div>
+                            
+                    </div>
+
+                    <h1 class="text-4xl  font-semibold leading-snug mt-5 sm:text-6xl">Scheduling infrastructure for everyone.</h1>
+                        <p class="text-xl mt-8 sm:text-2xl">Meet Cal.com, the event-juggling scheduler for everyone. Focus on meeting, not making meetings. Free for individuals.</p>
+                        <div id="button_holder" class="mt-12 flex flex-col sm:flex-row gap-3">
+                                <button class="px-8 py-3 font-semibold rounded-lg border text-white bg-violet-700 hover:bg-opacity-90 shadow-lg">Download Now
+                            </button>
+                            <button class="px-8 py-3 font-semibold rounded-lg border text-white bg-violet-700  hover:bg-opacity-90 shadow-lg">Read Docs
+                            </button>
+                      
+                        </div>
+            </div>
+
+            <!-- second screen -->
+             <div>
+                <div id="comany-title" class="flex justify-center items-center gap-2"> 
+                    <img src="../imgeasset/arrow1.svg" alt="" class="translate-y-2">
+                    <span class="font-medium">APPS POWERD BY ToLinuX</span>
+                    <img src="../imgeasset/arrow2.svg" alt="" class="translate-y-2 -scale-x-100">
+             </div>
+             
+             </div>
+        </div>
+     </main>
+
+</body>
+<script src="./script.js"></script>
+</html>
